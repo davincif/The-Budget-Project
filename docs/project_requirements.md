@@ -18,7 +18,7 @@ _NOT IMPLEMENTED_
 | Sporadic Income\*  | Some ponctual _Income_ from the External World that will likelly not happen again, like a loan return the user made to a friend.                  |
 | Outcome            | The negative of _Income_, representing any expenses a user might have.                                                                            |
 | Transference       | An _Account Transatoin_ between _Account Balances_.                                                                                               |
-| Spill Over\*       |                                                                                                                                                   |
+| Spill Over\*       | Everything that needs to be taken into consideration from one _Accounting Cycle_ to te other.                                                     |
 | Expression¹        | Like in a Exel SpreadSheet, the capital of a _Account Transation_ can be defined by references to other Transations and mathematical expressions. |
 
 \* needs better thinking
@@ -63,7 +63,7 @@ The user must be able to transfer capital in between _Account Balances_.
 
 Features:
 
-~ The user must be able to ~
+**~ The user must be able to ~**
 
 1. Visualise all the _Transference_ in the _Cycle_.
 1. Visualise all the _Transference_ of an _Account Balance_. — **Desirable Feature**
@@ -80,26 +80,50 @@ When creating an Income the user must:
 1. Optionally, the date when it was made, or a date when it will be made (in case it's a projection).
 1. And the system should automatically register the date this _Income_ was inserted in the system.
 
-Features:
-
-~ The user must be able to ~
+**~ The user must be able to ~**
 
 1. Easily visualize such incomes, for great is it's importance.
-1. Create _Salary Incomes_ to an _Account Balance_.
-   1. The user may create an _Salary Incomes_ as a _Projection_.
-   1. Add a _Projection_ for only a certain amount of _Accounting Cycle_.
-   1. If the _Salary Incomes_ is a _Projection_, the user can apply the _Transation_ to the _Account Balance_ at any time we wants.
-   1. To make an _Salary Incomes_ repeatable every _Accounting Cycle_ as _Projctions_.
-   1. To make an _Salary Incomes_ not repeatable anymore from a certain _Accounting Cycle_.
-   1. The repeatable _Projections_ might occour for an unlimeted or limited amount of _Accounting Cycles_.
-1. Remove an _Salary Incomes_.
-   1. When removing an _Salary Incomes_ that has _Projections_, the user must choose beteween deleting only the current _Salary Incomes_ or all the _Projection_ with it.
 1. Edit a _Salary Incomes_.
-1. Create _Salary Incomes_ whose capital is an _Expressoin_.
+1. Remove an _Salary Incomes_.
+1. A _Salary Incomes_ can be copied just like an _Outcome_.
 
-PS.: _Salary Incomes_ _Projections_ are a just **Desirable Feature**.
+---
 
-PS².: It's up for debate if, maybe, a copy functionality would be enough instead of the Projectoins.
+#### Use case 01 — My Hard-Earned Money
+
+After a whole month of hard work, the user owns one or two pay checks with his rightfully hard-earned money. He needs to keep track of that.
+
+**~ Therefore, the user must be able to ~**
+
+1. Create _Salary Incomes_ to an _Account Balance_.
+
+---
+
+#### Use case 02 — Vocation Bonus! \o/
+
+After a hole year of hard work the user will recieve an extra money from his company in order to better enjoy his time out. Hooraaay! The value he'll recieve is 1/3 of his Salary (which he had already inserted in the system).
+
+**~ Therefore, the user must be able to ~**
+
+1. Create _Salary Incomes_ whose capital is an _Expressoin_ in order to refer to an already existing _Income_ and add some mathematical expression to it.
+
+---
+
+#### Use case 03 — It's Monthly My Salary
+
+After a hole year in the same company, recieving almost the same salary, the user would like to not have to wast time adding the same information to te system over and over again every month.
+
+**~ Therefore, the user must be able to ~**
+
+1. The user may create an _Salary Incomes_ as a _Projection_.
+1. Add a _Projection_ for only a certain amount of _Accounting Cycle_.
+1. If the _Salary Incomes_ is a _Projection_, the user can apply the _Transation_ to the _Account Balance_ at any time we wants in the future, but still within the _Accounting Cycle_.
+1. To make an _Salary Incomes_ repeatable every _Accounting Cycle_ as _Projctions_.
+1. To make an _Salary Incomes_ not repeatable anymore from a certain _Accounting Cycle_.
+1. The repeatable _Projections_ might occour for an unlimeted or limited amount of _Accounting Cycles_.
+1. When removing an _Salary Incomes_ that has _Projections_, the user must choose beteween deleting only the current _Salary Incomes_ or all the _Projection_ with it.
+
+PS².: It's up for debate if, maybe, a copy functionality would be enough instead of the Projectoins. Also, perhaps both funcionality should exist.
 
 ## Outcomes
 
@@ -107,7 +131,7 @@ The user must be able to create an _Account Transation_ from a _Account Balance_
 
 When creating a Outcome, the user must provide the same information of the Income.
 
-~ The user must be able to ~
+**~ The user must be able to ~**
 
 1. Easily visualize all outcomes in the _Accounting Cycle_.
 1. Remove an _Outcome_.
@@ -119,28 +143,48 @@ When creating a Outcome, the user must provide the same information of the Incom
 
 The user had a belly ache and needed to go to the hospital. To do that fast, we got a taxy. Now he needs to register this expense.
 
-~ Thefore, the user must be able to ~
+**~ Thefore, the user must be able to ~**
 
 1. Create an _Outcome_ representing an expese the user had, with imediate inpact on a _Account Balance_.
+
+---
 
 #### Use case 02 — The Power Bill
 
 The user just recieved is power bill and the price was a bad surprise. Now, he wants to prevent this by adding in his current mounth expenses, a.k.a _Accounting Cycle_, a _Projection_ for the next _Accounting Cycle_ power expense.
 
-~ Thefore, the user must be able to ~
+**~ Thefore, the user must be able to ~**
 
 1. Create an _Outcome_ as a _Projection_, that is, not yet paid.
    1. Pay the yet not paied _Projected_ _Outcome_.
 1. Create an repeatable _Outcome_ — just like in _Salary Income_.
 
+---
+
 #### Use case 03 — The Grocery
 
-**Hostory 1** — In the end of his _Accounting Cycle_, the user noticed we expend too much on other things and there were not enough money for grocery in the last week of the month. If only he could have reserved the correct about of money beforehand, that could have been avoided.
+**Story 1** — In the end of his _Accounting Cycle_, the user noticed we expend too much on other things and there were not enough money for grocery in the last week of the month. If only he could have reserved the correct about of money beforehand, that could have been avoided.
 
-**Hostory 2** — By the end of an _Accounting Cycle_, the user just noticed he expended way too much money only on his recurrent groceries. He knew he should not have brought all that junk food! If only we could track his expenses on groceries to see if it's reaching his mountgly budget...
+**Story 2** — By the end of an _Accounting Cycle_, the user just noticed he expended way too much money only on his recurrent groceries. He knew he should not have brought all that junk food! If only we could track his expenses on groceries to see if it's reaching his mountgly budget...
 
-~ Thefore, the user must be able to ~
+**~ Thefore, the user must be able to ~**
 
 1. Create _Outcome_ whose capital is an _Expressoin_ in order to make partial payment of this _Projection_.
+
+---
+
+#### Use case 04 — I need a Medical Appointment Again
+
+**Story 1** — In a cold day of winter, the users toddler woke up with a burning feaver; He immediatly took her to the a doctor and took note of the appointment expense in the system. She got better, but one week down the line, but already in the next month, the medical scenario worsened again, and te user had to take her back to the same medical appointment.
+
+The user would like to copy all the expense's information from the last medical appointment since it's going to be exactly the same, only, maybe, with a different value.
+
+**Story 2** — The user had just came back to his Psicological appointment; but he already had one last week, still in this same month, and had added this expense to the system. We would like to copy the same expense from before since they are equal.
+
+**~ Thefore, the user must be able to ~**
+
+1. Create a new _Outcome_ by selecting and coping another one form inside or outside the current _Accounting Cycle_.
+
+## Sporadic Income
 
 <!-- — -->
