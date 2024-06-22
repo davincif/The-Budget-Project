@@ -6,21 +6,24 @@ _NOT IMPLEMENTED_
 
 ## Glossary
 
-| Term               | Meaning                                                                                                                          |
-| ------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| Accounting Cycle   | The month were a certain accouting is happening from who we extract useful predictions.                                          |
-| Account Balance    | A source of capital managed by the user. It can be a bank accout, a wallet, a piggy bank... whatever the user wants.             |
-| Disabled Accounts  | An _Account Balance_ that can no loger be used.                                                                                  |
-| Account Transation | A capital movement in an _Account Balance_.                                                                                      |
-| Projection\*       | An _Account Transation_ that did not happen just yet                                                                             |
-| Income             | A positve _Account Transation_, representing some capital the user recieved/added to an _Account Balance_.                       |
-| Salary Income\*    | An _Income_ of greate importance, like the user's montly salary, or a bonous his just recieved.                                  |
-| Sporadic Income\*  | Some ponctual _Income_ from the External World that will likelly not happen again, like a loan return the user made to a friend. |
-| Outcome            | The negative of _Income_, representing any expenses a user might have.                                                           |
-| Transference       | An _Account Transatoin_ between _Account Balances_.                                                                              |
-| Spill Over         |                                                                                                                                  |
+| Term               | Meaning                                                                                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Accounting Cycle   | The month were a certain accouting is happening from who we extract useful predictions.                                                           |
+| Account Balance    | A source of capital managed by the user. It can be a bank accout, a wallet, a piggy bank... whatever the user wants.                              |
+| Disabled Accounts  | An _Account Balance_ that can no loger be used.                                                                                                   |
+| Account Transation | A capital movement in an _Account Balance_.                                                                                                       |
+| Projection\*       | An _Account Transation_ that did not happen just yet                                                                                              |
+| Income             | A positve _Account Transation_, representing some capital the user recieved/added to an _Account Balance_.                                        |
+| Salary Income\*    | An _Income_ of greate importance, like the user's montly salary, or a bonous his just recieved.                                                   |
+| Sporadic Income\*  | Some ponctual _Income_ from the External World that will likelly not happen again, like a loan return the user made to a friend.                  |
+| Outcome            | The negative of _Income_, representing any expenses a user might have.                                                                            |
+| Transference       | An _Account Transatoin_ between _Account Balances_.                                                                                               |
+| Spill Over\*       |                                                                                                                                                   |
+| Expression¹        | Like in a Exel SpreadSheet, the capital of a _Account Transation_ can be defined by references to other Transations and mathematical expressions. |
 
 \* needs better thinking
+
+OBS¹: Although the desired effect of an Expression, might be achieved by writing a mathematical formula; it doest has to! It's important to notice that the same effect can be reached by clever UX; Even if, under the hood, we use expressions anyways to perform the actual work.
 
 ## Features
 
@@ -62,13 +65,20 @@ Features:
 
 ~ The user must be able to ~
 
-1. Visualise all the _Transference_ in the _Cicly_.
-1. Visualise all the _Transference_ of an _Account Balance_. - **Desirable Feature**
+1. Visualise all the _Transference_ in the _Cycle_.
+1. Visualise all the _Transference_ of an _Account Balance_. — **Desirable Feature**
 1. Create a _Transference_ of capital in between two _Account Balances_, informaing: a title, a description and a date for when it happened.
 
 ## Salary Income
 
 The user must be able to create an _Account Transation_ in a _Account Balance_ in order to represent some new capital that got added from the external world to the users _Accounting Cycle_.
+
+When creating an Income the user must:
+
+1. Provide a name for it, it's description and capital.
+1. Provide at wich _Account Balance_ the _Transaction_ must take effect in — Option if a _Projeciton_.
+1. Optionally, the date when it was made, or a date when it will be made (in case it's a projection).
+1. And the system should automatically register the date this _Income_ was inserted in the system.
 
 Features:
 
@@ -82,9 +92,10 @@ Features:
    1. To make an _Salary Incomes_ repeatable every _Accounting Cycle_ as _Projctions_.
    1. To make an _Salary Incomes_ not repeatable anymore from a certain _Accounting Cycle_.
    1. The repeatable _Projections_ might occour for an unlimeted or limited amount of _Accounting Cycles_.
-1. Remove an _Salary Incomes_
+1. Remove an _Salary Incomes_.
    1. When removing an _Salary Incomes_ that has _Projections_, the user must choose beteween deleting only the current _Salary Incomes_ or all the _Projection_ with it.
 1. Edit a _Salary Incomes_.
+1. Create _Salary Incomes_ whose capital is an _Expressoin_.
 
 PS.: _Salary Incomes_ _Projections_ are a just **Desirable Feature**.
 
@@ -94,15 +105,42 @@ PS².: It's up for debate if, maybe, a copy functionality would be enough instea
 
 The user must be able to create an _Account Transation_ from a _Account Balance_ to te external world that represents an expese that he had during his _Accounting Cycle_.
 
-Features:
+When creating a Outcome, the user must provide the same information of the Income.
 
 ~ The user must be able to ~
 
 1. Easily visualize all outcomes in the _Accounting Cycle_.
-1. Create an _Outcome_ representing an expese the user had.
 1. Remove an _Outcome_.
 1. Edit an _Outcome_.
+
+---
+
+#### Use case 01 — The Taxy Bill
+
+The user had a belly ache and needed to go to the hospital. To do that fast, we got a taxy. Now he needs to register this expense.
+
+~ Thefore, the user must be able to ~
+
+1. Create an _Outcome_ representing an expese the user had, with imediate inpact on a _Account Balance_.
+
+#### Use case 02 — The Power Bill
+
+The user just recieved is power bill and the price was a bad surprise. Now, he wants to prevent this by adding in his current mounth expenses, a.k.a _Accounting Cycle_, a _Projection_ for the next _Accounting Cycle_ power expense.
+
+~ Thefore, the user must be able to ~
+
 1. Create an _Outcome_ as a _Projection_, that is, not yet paid.
    1. Pay the yet not paied _Projected_ _Outcome_.
-1. Create an repeatable _Outcome_ — just like _Salary Income_.
-<!-- 1. ciar gasto com parâmetro e expressão -->
+1. Create an repeatable _Outcome_ — just like in _Salary Income_.
+
+#### Use case 03 — The Grocery
+
+**Hostory 1** — In the end of his _Accounting Cycle_, the user noticed we expend too much on other things and there were not enough money for grocery in the last week of the month. If only he could have reserved the correct about of money beforehand, that could have been avoided.
+
+**Hostory 2** — By the end of an _Accounting Cycle_, the user just noticed he expended way too much money only on his recurrent groceries. He knew he should not have brought all that junk food! If only we could track his expenses on groceries to see if it's reaching his mountgly budget...
+
+~ Thefore, the user must be able to ~
+
+1. Create _Outcome_ whose capital is an _Expressoin_ in order to make partial payment of this _Projection_.
+
+<!-- — -->
