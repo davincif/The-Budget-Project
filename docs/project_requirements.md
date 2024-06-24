@@ -6,20 +6,21 @@ _NOT IMPLEMENTED_
 
 ## Glossary
 
-| Term               | Meaning                                                                                                                                           |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Accounting Cycle   | The month were a certain accouting is happening from who we extract useful predictions.                                                           |
-| Account Balance    | A source of capital managed by the user. It can be a bank accout, a wallet, a piggy bank... whatever the user wants.                              |
-| Disabled Accounts  | An _Account Balance_ that can no loger be used.                                                                                                   |
-| Account Transation | A capital movement in an _Account Balance_.                                                                                                       |
-| Projection\*       | An _Account Transation_ that did not happen just yet                                                                                              |
-| Income             | A positve _Account Transation_, representing some capital the user recieved/added to an _Account Balance_.                                        |
-| Salary Income\*    | An _Income_ of greate importance, like the user's montly salary, or a bonous his just recieved.                                                   |
-| Sporadic Income\*  | Some ponctual _Income_ from the External World that will likelly not happen again, like a loan return the user made to a friend.                  |
-| Outcome            | The negative of _Income_, representing any expenses a user might have.                                                                            |
-| Transference       | An _Account Transatoin_ between _Account Balances_.                                                                                               |
-| Spill Over\*       | Everything that needs to be taken into consideration from one _Accounting Cycle_ to te other.                                                     |
-| Expression¹        | Like in a Exel SpreadSheet, the capital of a _Account Transation_ can be defined by references to other Transations and mathematical expressions. |
+| Term                   | Meaning                                                                                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Accounting Cycle       | The month were a certain accouting is happening from who we extract useful predictions.                                                           |
+| Account Balance        | A source of capital managed by the user. It can be a bank accout, a wallet, a piggy bank... whatever the user wants.                              |
+| Disabled Accounts      | An _Account Balance_ that can no loger be used.                                                                                                   |
+| Account Transation     | A capital movement in an _Account Balance_.                                                                                                       |
+| Projection\*           | An _Account Transation_ that did not happen just yet                                                                                              |
+| Income                 | A positve _Account Transation_, representing some capital the user recieved/added to an _Account Balance_.                                        |
+| Salary Income\*        | An _Income_ of greate importance, like the user's montly salary, or a bonous his just recieved.                                                   |
+| Sporadic Income\*      | Some ponctual _Income_ from the External World that will likelly not happen again, like a loan return the user made to a friend.                  |
+| Outcome                | The negative of _Income_, representing any expenses a user might have.                                                                            |
+| Transference           | An _Account Transatoin_ between _Account Balances_.                                                                                               |
+| Spill Over\*           | Everything that needs to be taken into consideration from one _Accounting Cycle_ to the other.                                                    |
+| Expression¹            | Like in a Exel SpreadSheet, the capital of a _Account Transation_ can be defined by references to other Transations and mathematical expressions. |
+| Predicted Free Balance | The amount of capital that, all _Incomes_ and _Outcomes_ considered, is free for the user to freely expense in the _Accounting Cycle_.            |
 
 \* needs better thinking
 
@@ -27,16 +28,23 @@ OBS¹: Although the desired effect of an Expression, might be achieved by writin
 
 ## Features
 
-1. Autentication
+1. [Autentication](#Autentication)
    1. Login
    1. Logout
    1. Password Recovery
-1. Manage Account Balance
-1. Manage Transferece
+1. [Manage Account Balances](#Manage-Account-Balance)
+1. [Manage Transfereces](#Transferece)
+1. [Manage Salary Incomes](#Salary-Income)
+1. [Manage Outcomes](#Outcomes)
+1. [Manage Sporadic Incomes](#Sporadic-Income)
+
+<a name="Autentication"></a>
 
 ## Autentication
 
 The must me able to login through, user name or email, and password.
+
+<a name="Manage-Account-Balance"></a>
 
 ## Manage Account Balance
 
@@ -57,6 +65,8 @@ Features:
       1. It can be completely deleted.
 1. The user must have a page where he can see the _Disabled Accounts_ and reactivate them.
 
+<a name="Transferece"></a>
+
 ## Transferece
 
 The user must be able to transfer capital in between _Account Balances_.
@@ -68,6 +78,8 @@ Features:
 1. Visualise all the _Transference_ in the _Cycle_.
 1. Visualise all the _Transference_ of an _Account Balance_. — **Desirable Feature**
 1. Create a _Transference_ of capital in between two _Account Balances_, informaing: a title, a description and a date for when it happened.
+
+<a name="Salary-Income"></a>
 
 ## Salary Income
 
@@ -125,15 +137,17 @@ After a hole year in the same company, recieving almost the same salary, the use
 
 PS².: It's up for debate if, maybe, a copy functionality would be enough instead of the Projectoins. Also, perhaps both funcionality should exist.
 
+<a name="Outcomes"></a>
+
 ## Outcomes
 
-The user must be able to create an _Account Transation_ from a _Account Balance_ to te external world that represents an expese that he had during his _Accounting Cycle_.
+The user must be able to create an _Account Transation_ from a _Account Balance_ to the external world that represents an expese that he had during his _Accounting Cycle_.
 
 When creating a Outcome, the user must provide the same information of the Income.
 
 **~ The user must be able to ~**
 
-1. Easily visualize all outcomes in the _Accounting Cycle_.
+1. Easily visualize all _Outcomes_ in the _Accounting Cycle_.
 1. Remove an _Outcome_.
 1. Edit an _Outcome_.
 
@@ -185,6 +199,29 @@ The user would like to copy all the expense's information from the last medical 
 
 1. Create a new _Outcome_ by selecting and coping another one form inside or outside the current _Accounting Cycle_.
 
+<a name="Sporadic-Income"></a>
+
 ## Sporadic Income
 
-<!-- — -->
+The user may be able to create incomes that are sporadic,taking effect in an _Account Balance_; that would represent some unexpected or not very important income that users just recieved, like a some money that a colleague gave you to pay his share on the pizza time.
+
+When creating a Outcome, the user must provide the same information of the Income and Outcome.
+
+**~ The user must be able to ~**
+
+1. Easily visualize all _Sporadic Income_ in the _Accounting Cycle_ together with the _Outcomes_.
+1. Remove a _Sporadic Income_.
+1. Edit a _Sporadic Income_.
+
+---
+
+#### Use case 01 — Helping a Relative Out
+
+**Story 1** — On a bright summer day, the users recieved a call from his ant. She was in need of some money to go to the doctor, she had no money at the time and asked her son to loan her the money. She's a woman of her word and promissed her simbling that she would give the money back as soon as her wage droped. The user wants to borrow the money, but he doesn't wan't to affect his _Predicted Free Balance_.
+
+**Story 2** — On a happy sunday, the user went out for a bar with some friends. From tere they decided to go somewhere else, and to make it quick the user paid the whole bill and his friend would refound him late in anoter day. The user wanted to add this _Transferece_ that occoured in his _Account Balance_ without compromissing his _Predicted Free Balance_.
+
+**~ Thefore, the user must be able to ~**
+
+1. Add create a _Sporadic Income_ related with an _Outcome_. — Perhaps by throw the expressions?
+1. Create multiple _Sporadic Income_ related to a single _Outcome_.
