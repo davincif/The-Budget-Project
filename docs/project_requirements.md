@@ -37,6 +37,7 @@ OBS¹: Although the desired effect of an Expression, might be achieved by writin
 1. [Manage Salary Incomes](#Salary-Income)
 1. [Manage Outcomes](#Outcomes)
 1. [Manage Sporadic Incomes](#Sporadic-Income)
+1. [Predict Free Balance](#Predict-Free-Balance)
 
 <a name="Autentication"></a>
 
@@ -225,3 +226,19 @@ When creating a Outcome, the user must provide the same information of the Incom
 
 1. Add create a _Sporadic Income_ related with an _Outcome_. — Perhaps by throw the expressions?
 1. Create multiple _Sporadic Income_ related to a single _Outcome_.
+
+<a name="Predict-Free-Balance"></a>
+
+## Predict Free Balance
+
+The Final object of this project is to give the user a very good idea of how much he can expend in his mounth witout hurting his financial life. For that we need to have a clear view of this number.
+
+---
+
+#### Use case 01 — Keep me on the track
+
+After adding all his income, money already existent in his accounts, and all his projected expenses for the month, like water and power bills; the user now wantes to see how much money is free for him and that he can safely expend.
+
+**~ Thefore, the user must be able to ~**
+
+1. Visualize, clearly and easily, the projected free capital for the current _Accounting Cycle_.
