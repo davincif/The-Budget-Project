@@ -7,10 +7,11 @@ _NOT IMPLEMENTED_
 ## Glossary
 
 Doubts:
+
 - Projection == Budget?
 
 | Term        | Meaning                                                            |
-|-------------|--------------------------------------------------------------------|
+| ----------- | ------------------------------------------------------------------ |
 | Transaction | A financial transaction meaning being negative or positive balance |
 | User        | The holder of an account                                           |
 | Account     | The accumulated of transactions (Income and Expense)               |

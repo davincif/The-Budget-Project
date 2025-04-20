@@ -7,23 +7,25 @@ _NOT IMPLEMENTED_
 ## Glossary
 
 Doubts:
-- Projection == Budget?
 
-| Term                   | Meaning                                                                                                                                                  |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Accounting Cycle       | The period of time where a certain where we extract useful predictions.                                                                                  |
-| Account Balance        | A source of capital managed by the user. (bank accout, wallet, piggy bank).                                                                              |
-| Disabled Accounts      | An _Account Balance_ that can no loger be used.                                                                                                          |
-| Transaction             | A capital movement in an _Account Balance_.                                                                                                             |
-| Periodic Transaction\* | A _Transaction_ that did not happen just yet                                                                                                             |
-| Income                 | A positve _Transaction_, representing the amount the user recieved/added to an _Account Balance_.                                                        |
-| Salary Income\*        | A periodic _Income_, (user's montly salary).                                                                                                             |
-| Sporadic Income\*      | A ponctual _Income_ not expected to happen again, (refund, bonus, split payment, sale, lottery...).                                                      |
-| Outcome                | The negative of _Income_, representing any expenses a user might have.    **Same as Transaction?**                                                       |
-| Transference           | An _Account Transaction_ between _Account Balances_. **Same as Transaction?**                                                                            |
-| Spill Over\*           | Everything that needs to be taken into consideration from one _Accounting Cycle_ to the other. **Didnt understand**                                      |
-| Expression¹            | Like in a Exel SpreadSheet, the capital of a _Transaction_ can be defined by references to other Transactions and mathematical expressions.**Forumulas?**|
-| Month Budget           | The amount of capital that, after all _Incomes_ and _Outcomes_, available to use and expend in this _Accounting Cycle_.                                  |
+- Projection == Budget?
+-
+
+| Term                   | Meaning                                                                                                                                                   |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Accounting Cycle       | The period of time where a certain where we extract useful predictions.                                                                                   |
+| Account Balance        | A source of capital managed by the user. (bank accout, wallet, piggy bank).                                                                               |
+| Disabled Accounts      | An _Account Balance_ that can no loger be used.                                                                                                           |
+| Transaction            | A capital movement in an _Account Balance_.                                                                                                               |
+| Periodic Transaction\* | A _Transaction_ that did not happen just yet                                                                                                              |
+| Income                 | A positve _Transaction_, representing the amount the user recieved/added to an _Account Balance_.                                                         |
+| Salary Income\*        | A periodic _Income_, (user's montly salary).                                                                                                              |
+| Sporadic Income\*      | A ponctual _Income_ not expected to happen again, (refund, bonus, split payment, sale, lottery...).                                                       |
+| Outcome                | The negative of _Income_, representing any expenses a user might have. **Same as Transaction?**                                                           |
+| Transference           | An _Account Transaction_ between _Account Balances_. **Same as Transaction?**                                                                             |
+| Spill Over\*           | Everything that needs to be taken into consideration from one _Accounting Cycle_ to the other. **Didnt understand**                                       |
+| Expression¹            | Like in a Exel SpreadSheet, the capital of a _Transaction_ can be defined by references to other Transactions and mathematical expressions.**Forumulas?** |
+| Month Budget           | The amount of capital that, after all _Incomes_ and _Outcomes_, available to use and expend in this _Accounting Cycle_.                                   |
 
 \* needs better thinking
 
@@ -188,7 +190,7 @@ The user just recieved is energy bill and the price was a bad surprise. Now, he 
 
 **~ Thefore, the user must be able to ~**
 
-1. Create _Outcome_ where its amount is an _Expression_ in order to make partial payment of this _Periodic Transaction_ (**Budget??**). 
+1. Create _Outcome_ where its amount is an _Expression_ in order to make partial payment of this _Periodic Transaction_ (**Budget??**).
 
 ---
 
