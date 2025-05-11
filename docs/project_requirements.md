@@ -2,35 +2,29 @@
 
 ## Index
 
-_NOT IMPLEMENTED_
+> _TO BE IMPLEMENTED_
 
 ## Glossary
 
-Doubts:
+| Term                 | Definition                                                                                                                                                  |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Accounting Cycle     | A defined period (usually a month) in which the user's financial activity is analyzed to extract insights and predictions.                                  |
+| Account Balance      | A source of capital managed by the user (e.g., bank account, wallet, piggy bank).                                                                           |
+| Disabled Account     | An Account Balance that is inactive due to historical transactions, and cannot be used for future transactions unless reactivated.                          |
+| Transaction          | Any movement of capital within or across Account Balances. Includes expenses, income, and transfers.                                                        |
+| Periodic Transaction | A scheduled transaction set to occur repeatedly over Accounting Cycles.                                                                                     |
+| Income               | A positive Transaction where funds are added to an Account Balance.                                                                                         |
+| Salary Income        | A recurring Income (usually monthly) representing the user's regular salary.                                                                                |
+| Sporadic Income      | A one-time or irregular Income such as a bonus, refund, or sale.                                                                                            |
+| Expense              | A negative Transaction representing spending or money leaving an Account Balance. (Also referred to as Outcome.)                                            |
+| Transfer             | A Transaction that moves funds between two Account Balances.                                                                                                |
+| Spill Over           | The financial data from one Accounting Cycle that influences or carries over into the next.                                                                 |
+| Expression           | A formula-like reference (e.g., referencing other transactions) used to compute the value of a new Transaction. May be abstracted through the UI.           |
+| Monthly Budget       | The predicted amount of money available for discretionary spending after accounting for all known incomes and expenses within the current Accounting Cycle. |
 
-- Projection == Budget?
--
+> _Note: All financial events (income, expense, transfer) are treated as Transactions with different categories._
 
-| Term                   | Meaning                                                                                                                                                   |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Accounting Cycle       | The period of time where a certain where we extract useful predictions.                                                                                   |
-| Account Balance        | A source of capital managed by the user. (bank accout, wallet, piggy bank).                                                                               |
-| Disabled Accounts      | An _Account Balance_ that can no loger be used.                                                                                                           |
-| Transaction            | A capital movement in an _Account Balance_.                                                                                                               |
-| Periodic Transaction\* | A _Transaction_ that did not happen just yet                                                                                                              |
-| Income                 | A positve _Transaction_, representing the amount the user recieved/added to an _Account Balance_.                                                         |
-| Salary Income\*        | A periodic _Income_, (user's montly salary).                                                                                                              |
-| Sporadic Income\*      | A ponctual _Income_ not expected to happen again, (refund, bonus, split payment, sale, lottery...).                                                       |
-| Outcome                | The negative of _Income_, representing any expenses a user might have. **Same as Transaction?**                                                           |
-| Transference           | An _Account Transaction_ between _Account Balances_. **Same as Transaction?**                                                                             |
-| Spill Over\*           | Everything that needs to be taken into consideration from one _Accounting Cycle_ to the other. **Didnt understand**                                       |
-| Expression¹            | Like in a Exel SpreadSheet, the capital of a _Transaction_ can be defined by references to other Transactions and mathematical expressions.**Forumulas?** |
-| Month Budget           | The amount of capital that, after all _Incomes_ and _Outcomes_, available to use and expend in this _Accounting Cycle_.                                   |
-
-\* needs better thinking
-
-OBS¹: Although the desired effect of an Expression might be achieved by writing a mathematical formula; it does't need to! It's important to notice that the same effect can be reached by clever UX; Even if, under the hood, we use expressions anyways to perform the actual work.
-OBS²: Everything should be considered Transaction but as different categories (Income, Expense, Periodic ...)
+---
 
 ## Features
 
