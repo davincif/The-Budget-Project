@@ -1,0 +1,52 @@
+@startuml
+' Database model based on project_mvp_V1 and project_requirements
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+entity User {
+  +ID: UUID
+  +Email: string
+  +Password: string
+  +CreatedAt: datetime
+  +UpdatedAt: datetime
+  +isActive: boolean
+}
+
+entity Account {
+  +ID: UUID
+  +Name: string
+  +Description: string
+  +Type: enum
+  +ExpectedAmount: number
+  +ConfirmedAmount: number
+  +AmountLastUpdated: datetime
+  +isActive: boolean
+  +CreatedAt: datetime
+  +UpdatedAt: datetime
+  --
+  * UserID: UUID
+}
+
+entity Transaction {
+  +ID: UUID
+  +Name: string
+  +Description: string
+  +Amount: number
+  +Category: string
+  +CreatedAt: datetime
+  +UpdatedAt: datetime
+  +ExecutionDate: date
+  +isConfirmed: boolean
+  +isRecurrent: boolean
+  +recurrencyType: enum
+  +recurrencyEnd: date
+  +TransactionReference: UUID
+  --
+  * AccountID: UUID
+}
+
+User ||--o{ Account : owns
+Account ||--o{ Transaction : contains
+Transaction }|..|{ Transaction : relates_to
+@enduml

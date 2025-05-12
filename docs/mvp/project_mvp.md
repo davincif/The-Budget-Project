@@ -59,8 +59,8 @@ Doubts:
 
 ## Future features
 
-[ ] - NetGrowth;
+- [ ] NetGrowth;
 
-[ ] - Relate transactions (Splitting, percentage, refundOfWhat);
+- [ ] Relate transactions (Splitting, percentage, refundOfWhat);
 
-[ ] - Build an expected calendar;
+- [ ] Build an expected calendar;
