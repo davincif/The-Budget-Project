@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="850px" preserveAspectRatio="none" style="width:645px;height:850px;background:#FFFFFF;" version="1.1" viewBox="0 0 645 850" width="645px" zoomAndPan="magnify"><defs/><g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><g id="elem_User"><rect codeLine="8" fill="#F1F1F1" height="188.9688" id="User" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="155" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="68.5" y="24.9951">User</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="161" y1="33.2969" y2="33.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="13" y="50.292">ID: UUID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="13" y="66.5889">Email: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="13" y="82.8857">Name: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="13" y="99.1826">NickName?: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="13" y="115.4795">BirthDay?: date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="13" y="131.7764">Password: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="13" y="148.0732">isActive: boolean</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="13" y="164.3701">CreatedAt: datetime</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="13" y="180.667">UpdatedAt: datetime</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="161" y1="187.9688" y2="187.9688"/></g><!--MD5=[f9a29335b499db729be669fd1bd54958]
+class Account--><g id="elem_Account"><rect codeLine="20" fill="#F1F1F1" height="221.5625" id="Account" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="238" x="66.5" y="256"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="157" y="273.9951">Account</text><line style="stroke:#181818;stroke-width:0.5;" x1="67.5" x2="303.5" y1="282.2969" y2="282.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="72.5" y="299.292">ID: UUID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="72.5" y="315.5889">Name: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="72.5" y="331.8857">Description: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="72.5" y="348.1826">Type: int (FK AccountTypeEnum)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="72.5" y="364.4795">ExpectedAmount: float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="72.5" y="380.7764">ConfirmedAmount: float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="211" x="72.5" y="397.0732">AmountLastUpdated: datetime</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117" x="72.5" y="413.3701">isActive: boolean</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="72.5" y="429.667">CreatedAt: datetime</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="72.5" y="445.9639">UpdatedAt: datetime</text><line style="stroke:#181818;stroke-width:1.0;" x1="67.5" x2="303.5" y1="453.2656" y2="453.2656"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="72.5" y="470.2607">*UserID: UUID</text></g><!--MD5=[4555bb1b0911a5adf28ce6dbe60fed2e]
+class Transaction--><g id="elem_Transaction"><rect codeLine="35" fill="#F1F1F1" height="286.75" id="Transaction" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="262" x="177.5" y="538"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="268" y="555.9951">Transaction</text><line style="stroke:#181818;stroke-width:0.5;" x1="178.5" x2="438.5" y1="564.2969" y2="564.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="183.5" y="581.292">ID: UUID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="183.5" y="597.5889">Name: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="183.5" y="613.8857">NameAsInBankApp: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="183.5" y="630.1826">Description: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="183.5" y="646.4795">Amount: float</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="183.5" y="662.7764">ExecutionDate: date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="183.5" y="679.0732">IsConfirmed: boolean</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="183.5" y="695.3701">IsRecurrent: boolean</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="250" x="183.5" y="711.667">Type: int (FK TransactionTypeEnum)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="183.5" y="727.9639">RecurrenceType: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="183.5" y="744.2607">RecurrenceEnd: date</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="203" x="183.5" y="760.5576">TransactionReference?: UUID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="183.5" y="776.8545">CreatedAt: datetime</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="183.5" y="793.1514">UpdatedAt: datetime</text><line style="stroke:#181818;stroke-width:1.0;" x1="178.5" x2="438.5" y1="800.4531" y2="800.4531"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="121" x="183.5" y="817.4482">*AccountID: UUID</text></g><!--MD5=[00979dcf394e45539abee9c04f06e878]
+class AccountTypeEnum--><g id="elem_AccountTypeEnum"><rect codeLine="54" fill="#F1F1F1" height="123.7813" id="AccountTypeEnum" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="181" x="197" y="39.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="222" y="57.4951">AccountTypeEnum</text><line style="stroke:#181818;stroke-width:0.5;" x1="198" x2="377" y1="65.7969" y2="65.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="203" y="82.792">value: int</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="203" y="99.0889">Name: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="203" y="115.3857">Mnemonic: string</text><line style="stroke:#181818;stroke-width:1.0;" x1="198" x2="377" y1="122.6875" y2="122.6875"/><line style="stroke:#181818;stroke-width:1.0;" x1="198" x2="377" y1="124.6875" y2="124.6875"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="203" y="139.6826">1 | Bank Account | BANK</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="140" x="203" y="155.9795">2 | Cash         | CASH</text></g><!--MD5=[1882eea84436a2e7f7e0f48f1ec38009]
+class TransactionTypeEnum--><g id="elem_TransactionTypeEnum"><rect codeLine="63" fill="#F1F1F1" height="156.375" id="TransactionTypeEnum" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="186" x="339.5" y="289"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="355" y="306.9951">TransactionTypeEnum</text><line style="stroke:#181818;stroke-width:0.5;" x1="340.5" x2="524.5" y1="315.2969" y2="315.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="345.5" y="332.292">value: int</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="345.5" y="348.5889">Name: string</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="345.5" y="364.8857">Mnemonic: string</text><line style="stroke:#181818;stroke-width:1.0;" x1="340.5" x2="524.5" y1="372.1875" y2="372.1875"/><line style="stroke:#181818;stroke-width:1.0;" x1="340.5" x2="524.5" y1="374.1875" y2="374.1875"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="345.5" y="389.1826">1 | Movement     | MOV</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="345.5" y="405.4795">2 | Transference | TRANS</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="345.5" y="421.7764">3 | Partial      | PART</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="345.5" y="438.0732">4 | Sporadic     | SPOR</text></g><!--MD5=[87e802f94dff5db0b14b612664619da8]
+link User to Account--><g id="link_User_Account"><path codeLine="74" d="M114.25,204.23 C114.25,204.23 114.25,247.99 114.25,247.99 " fill="none" id="User-Account" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="114.25" x2="120.25" y1="247.99" y2="255.99"/><line style="stroke:#181818;stroke-width:1.0;" x1="114.25" x2="108.25" y1="247.99" y2="255.99"/><line style="stroke:#181818;stroke-width:1.0;" x1="114.25" x2="114.25" y1="247.99" y2="255.99"/><ellipse cx="114.25" cy="241.99" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="110.25" x2="118.25" y1="200.23" y2="200.23"/><line style="stroke:#181818;stroke-width:1.0;" x1="110.25" x2="118.25" y1="203.23" y2="203.23"/><line style="stroke:#181818;stroke-width:1.0;" x1="114.25" x2="114.25" y1="204.23" y2="196.23"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="81.25" y="222.1769">owns</text></g><!--MD5=[6bd399dd209ecb8775ea4fbe013b111a]
+link Account to Transaction--><g id="link_Account_Transaction"><path codeLine="75" d="M241,486.32 C241,486.32 241,529.83 241,529.83 " fill="none" id="Account-Transaction" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="241" x2="247" y1="529.83" y2="537.83"/><line style="stroke:#181818;stroke-width:1.0;" x1="241" x2="235" y1="529.83" y2="537.83"/><line style="stroke:#181818;stroke-width:1.0;" x1="241" x2="241" y1="529.83" y2="537.83"/><ellipse cx="241" cy="523.83" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="237" x2="245" y1="482.32" y2="482.32"/><line style="stroke:#181818;stroke-width:1.0;" x1="237" x2="245" y1="485.32" y2="485.32"/><line style="stroke:#181818;stroke-width:1.0;" x1="241" x2="241" y1="486.32" y2="478.32"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="54" x="186" y="504.1369">contains</text></g><!--MD5=[e8100407711028fa912b9a6221ca8c01]
+link Transaction to Transaction--><g id="link_Transaction_Transaction"><path codeLine="76" d="M406.17,529.83 C406.17,529.83 406.17,508 406.17,508 C406.17,508 482.5,508 482.5,508 C482.5,508 482.5,843 482.5,843 C482.5,843 308.5,843 308.5,843 C308.5,843 308.5,833.1 308.5,833.1 " fill="none" id="Transaction-Transaction" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="308.5" x2="302.5" y1="833.1" y2="825.1"/><line style="stroke:#181818;stroke-width:1.0;" x1="308.5" x2="314.5" y1="833.1" y2="825.1"/><line style="stroke:#181818;stroke-width:1.0;" x1="308.5" x2="308.5" y1="833.1" y2="825.1"/><line style="stroke:#181818;stroke-width:1.0;" x1="304.5" x2="312.5" y1="835.1" y2="835.1"/><line style="stroke:#181818;stroke-width:1.0;" x1="406.17" x2="412.17" y1="529.83" y2="537.83"/><line style="stroke:#181818;stroke-width:1.0;" x1="406.17" x2="400.17" y1="529.83" y2="537.83"/><line style="stroke:#181818;stroke-width:1.0;" x1="406.17" x2="406.17" y1="529.83" y2="537.83"/><line style="stroke:#181818;stroke-width:1.0;" x1="410.17" x2="402.17" y1="527.83" y2="527.83"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="488.5" y="709.4369">relates_to (future N:N)</text></g><!--MD5=[fbe75b88ba94074c7c35c28fa4dcc3eb]
+link AccountTypeEnum to Account--><g id="link_AccountTypeEnum_Account"><path codeLine="77" d="M250.75,171.75 C250.75,171.75 250.75,247.99 250.75,247.99 " fill="none" id="AccountTypeEnum-Account" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.75" x2="256.75" y1="247.99" y2="255.99"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.75" x2="244.75" y1="247.99" y2="255.99"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.75" x2="250.75" y1="247.99" y2="255.99"/><line style="stroke:#181818;stroke-width:1.0;" x1="254.75" x2="246.75" y1="245.99" y2="245.99"/><line style="stroke:#181818;stroke-width:1.0;" x1="246.75" x2="254.75" y1="167.75" y2="167.75"/><line style="stroke:#181818;stroke-width:1.0;" x1="246.75" x2="254.75" y1="170.75" y2="170.75"/><line style="stroke:#181818;stroke-width:1.0;" x1="250.75" x2="250.75" y1="171.75" y2="163.75"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="74" x="175.75" y="205.9369">categorizes</text></g><!--MD5=[8fff902b4f24e9943cf004be87bc59c8]
+link TransactionTypeEnum to Transaction--><g id="link_TransactionTypeEnum_Transaction"><path codeLine="78" d="M372.83,453.15 C372.83,453.15 372.83,529.83 372.83,529.83 " fill="none" id="TransactionTypeEnum-Transaction" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="372.83" x2="378.83" y1="529.83" y2="537.83"/><line style="stroke:#181818;stroke-width:1.0;" x1="372.83" x2="366.83" y1="529.83" y2="537.83"/><line style="stroke:#181818;stroke-width:1.0;" x1="372.83" x2="372.83" y1="529.83" y2="537.83"/><line style="stroke:#181818;stroke-width:1.0;" x1="376.83" x2="368.83" y1="527.83" y2="527.83"/><line style="stroke:#181818;stroke-width:1.0;" x1="368.83" x2="376.83" y1="449.15" y2="449.15"/><line style="stroke:#181818;stroke-width:1.0;" x1="368.83" x2="376.83" y1="452.15" y2="452.15"/><line style="stroke:#181818;stroke-width:1.0;" x1="372.83" x2="372.83" y1="453.15" y2="445.15"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="314.83" y="487.5569">classifies</text></g><!--MD5=[82055994ef278060f42ef15457f54560]
+@startuml
+' Updated Database Model reflecting MVP V2
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+' Optional fields will be marked with ? in comments
+
+entity User {
+  ID: UUID
+  Email: string
+  Name: string
+  NickName?: string
+  BirthDay?: date
+  Password: string
+  isActive: boolean
+  CreatedAt: datetime
+  UpdatedAt: datetime
+}
+
+entity Account {
+  ID: UUID
+  Name: string
+  Description: string
+  Type: int (FK AccountTypeEnum)
+  ExpectedAmount: float
+  ConfirmedAmount: float
+  AmountLastUpdated: datetime
+  isActive: boolean
+  CreatedAt: datetime
+  UpdatedAt: datetime
+  - -
+  *UserID: UUID
+}
+
+entity Transaction {
+  ID: UUID
+  Name: string
+  NameAsInBankApp: string
+  Description: string
+  Amount: float
+  ExecutionDate: date
+  IsConfirmed: boolean
+  IsRecurrent: boolean
+  Type: int (FK TransactionTypeEnum)
+  RecurrenceType: string
+  RecurrenceEnd: date
+  TransactionReference?: UUID
+  CreatedAt: datetime
+  UpdatedAt: datetime
+  - -
+  *AccountID: UUID
+}
+
+entity AccountTypeEnum {
+  value: int
+  Name: string
+  Mnemonic: string
+  ==
+  1 | Bank Account | BANK
+  2 | Cash         | CASH
+}
+
+entity TransactionTypeEnum {
+  value: int
+  Name: string
+  Mnemonic: string
+  ==
+  1 | Movement     | MOV
+  2 | Transference | TRANS
+  3 | Partial      | PART
+  4 | Sporadic     | SPOR
+}
+
+User ||- -o{ Account : owns
+Account ||- -o{ Transaction : contains
+Transaction }|..|{ Transaction : relates_to (future N:N)
+AccountTypeEnum ||- -|{ Account : categorizes
+TransactionTypeEnum ||- -|{ Transaction : classifies
+@enduml
+
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+
+entity User {
+  ID: UUID
+  Email: string
+  Name: string
+  NickName?: string
+  BirthDay?: date
+  Password: string
+  isActive: boolean
+  CreatedAt: datetime
+  UpdatedAt: datetime
+}
+
+entity Account {
+  ID: UUID
+  Name: string
+  Description: string
+  Type: int (FK AccountTypeEnum)
+  ExpectedAmount: float
+  ConfirmedAmount: float
+  AmountLastUpdated: datetime
+  isActive: boolean
+  CreatedAt: datetime
+  UpdatedAt: datetime
+  - -
+  *UserID: UUID
+}
+
+entity Transaction {
+  ID: UUID
+  Name: string
+  NameAsInBankApp: string
+  Description: string
+  Amount: float
+  ExecutionDate: date
+  IsConfirmed: boolean
+  IsRecurrent: boolean
+  Type: int (FK TransactionTypeEnum)
+  RecurrenceType: string
+  RecurrenceEnd: date
+  TransactionReference?: UUID
+  CreatedAt: datetime
+  UpdatedAt: datetime
+  - -
+  *AccountID: UUID
+}
+
+entity AccountTypeEnum {
+  value: int
+  Name: string
+  Mnemonic: string
+  ==
+  1 | Bank Account | BANK
+  2 | Cash         | CASH
+}
+
+entity TransactionTypeEnum {
+  value: int
+  Name: string
+  Mnemonic: string
+  ==
+  1 | Movement     | MOV
+  2 | Transference | TRANS
+  3 | Partial      | PART
+  4 | Sporadic     | SPOR
+}
+
+User ||- -o{ Account : owns
+Account ||- -o{ Transaction : contains
+Transaction }|..|{ Transaction : relates_to (future N:N)
+AccountTypeEnum ||- -|{ Account : categorizes
+TransactionTypeEnum ||- -|{ Transaction : classifies
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>

@@ -1,4 +1,4 @@
-# The Budget Project
+# The Budget Project Docs ![version](https://img.shields.io/badge/version-0.0.1-green?style=flat)
 
 A personal and family finance management tool designed to help users maintain healthy financial habits.
 
@@ -40,3 +40,5 @@ For more definitions, see the [Glossary](./docs/project_requirements.md#glossary
 
 > This project is open source and evolving iteratively.
 > Contributions, ideas, and feedback are welcome!
+
+<!-- badge generator - https://badgesgenerator.com -->

@@ -24,6 +24,8 @@
 
 | Term                 | Definition                                                                                                                                                  |
 | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| User                 | An individual who uses the system. A User owns one or more Account Balances and is the creator of all associated Transactions.                              |
+| Account              | The accumulated of Transactions (Income and Expense)                                                                                                        |
 | Accounting Cycle     | A defined period (usually a month) in which the user's financial activity is analyzed to extract insights and predictions.                                  |
 | Account Balance      | A source of capital managed by the user (e.g., bank account, wallet, piggy bank).                                                                           |
 | Disabled Account     | An Account Balance that is inactive due to historical transactions, and cannot be used for future transactions unless reactivated.                          |
