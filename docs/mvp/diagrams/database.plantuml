@@ -1,0 +1,80 @@
+@startuml
+' Updated Database Model reflecting MVP V2
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+' Optional fields will be marked with ? in comments
+
+entity User {
+  ID: UUID
+  Email: string
+  Name: string
+  NickName?: string
+  BirthDay?: date
+  Password: string
+  isActive: boolean
+  CreatedAt: datetime
+  UpdatedAt: datetime
+}
+
+entity Account {
+  ID: UUID
+  Name: string
+  Description: string
+  Type: int (FK AccountTypeEnum)
+  ExpectedAmount: float
+  ConfirmedAmount: float
+  AmountLastUpdated: datetime
+  isActive: boolean
+  CreatedAt: datetime
+  UpdatedAt: datetime
+  --
+  *UserID: UUID
+}
+
+entity Transaction {
+  ID: UUID
+  Name: string
+  NameAsInBankApp: string
+  Description: string
+  Amount: float
+  ExecutionDate: date
+  IsConfirmed: boolean
+  IsRecurrent: boolean
+  Type: int (FK TransactionTypeEnum)
+  RecurrenceType: string
+  RecurrenceEnd: date
+  TransactionReference?: UUID
+  CreatedAt: datetime
+  UpdatedAt: datetime
+  --
+  *AccountID: UUID
+}
+
+entity AccountTypeEnum {
+  value: int
+  Name: string
+  Mnemonic: string
+  ==
+  1 | Bank Account | BANK
+  2 | Cash         | CASH
+}
+
+entity TransactionTypeEnum {
+  value: int
+  Name: string
+  Mnemonic: string
+  ==
+  1 | Movement     | MOV
+  2 | Transference | TRANS
+  3 | Partial      | PART
+  4 | Sporadic     | SPOR
+}
+
+User ||--o{ Account : owns
+Account ||--o{ Transaction : contains
+Transaction }|..|{ Transaction : relates_to (future N:N)
+AccountTypeEnum ||--|{ Account : categorizes
+TransactionTypeEnum ||--|{ Transaction : classifies
+@enduml

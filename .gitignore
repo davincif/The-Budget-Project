@@ -1,0 +1,8 @@
+**/*.bkp
+.idea
+.qodo
+
+# IDEAs
+.vscode/
+
+trash/
