@@ -98,7 +98,7 @@
 | Movement     | MOV      | 1     |
 | Transference | TRANS    | 2     |
 | Partial      | PART     | 3     |
-| Sporadic     | SPOR     | 3     |
+| Sporadic     | SPOR     | 4     |
 
 ## Relationships
 

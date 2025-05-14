@@ -18,7 +18,7 @@
     - [Expense Examples](#expense-examples)
     - [Transfers \& Spillover](#transfers--spillover)
     - [Budget Monitoring](#budget-monitoring)
-  - [FInal Considerations](#final-considerations)
+  - [Final Considerations](#final-considerations)
 
 ## Glossary
 
@@ -127,6 +127,6 @@
   - Total planned expenses
   - Net monthly balance (budget to spend)
 
-## FInal Considerations
+## Final Considerations
 
 > This document is a living specification and subject to improvements as the project evolves. Contributions and clarifications are welcome!
