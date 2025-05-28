@@ -48,13 +48,13 @@ limitations under the License.
 | --------- | -------- | ---------- |
 | ID        | UUID     | ✅         |
 | Email     | string   | ✅         |
-| Name      | string   | ✅         |
-| NickName? | string   | ❌         |
-| BirthDay? | Date     | ❌         |
 | Password  | string   | ✅         |
+| Name      | string   | ❌         |
+| NickName  | string   | ❌         |
 | isActive  | boolean  | ✅         |
 | CreatedAt | datetime | ✅         |
 | UpdatedAt | datetime | ✅         |
+| BirthDay  | Date     | ❌         |
 
 ### Account
 

@@ -61,4 +61,4 @@ For more definitions, see the [Glossary](./docs/project_requirements.md#glossary
 
 ## License 📄
 
-This project is licensed under the [Apache License 2.0](./LICENSE).
+This project is licensed under the [Apache License 2.0](./LICENSE.md).
